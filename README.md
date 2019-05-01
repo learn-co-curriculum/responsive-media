@@ -5,7 +5,7 @@
 Media queries allow us to choose between certain styles based on the size of
 the device. We can easily imagine a web page full of text breaking into
 multiple columns on wide screens and reducing to a single screen on a phone.
-But what about _media_ instead of text. How can we make sure that a photo of an
+But what about _media_ instead of text? How can we make sure that a photo of an
 adorable kitten makes sense in a multi-column _and_ a single-column display?
 
 > **NOTE:** We're going to talk about _media_ as in images or videos in this
