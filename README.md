@@ -36,20 +36,33 @@ cases our media is contained within the columns and rows of our layouts.
 ```css
 img, form, input, table, video, audio, iframe {
   width: 100%;
-  max-width: 100%;
 }
 ```
 
 In this code snippet, we set our images, forms, inputs, tables, videos, audio
 elements, and iframes all to expand `width: 100%;`. This sets them to be as
-wide as the parent element they are inside of. Then, by setting  `max-width:
-100%;`, we prevent them from getting any larger than their parent.
+wide as the parent element they are inside of. 
 
-Using both these properties will ensure that they scale fluidly in all
-browsers.  Having them fill their containers allows us to write fewer media
-queries overall as they will squish and expand until we set a fixed size for
-their parent elements.  This also allows us to focus sizing the parent element
-of the media content, which will often be a column of sibling elements.
+```css
+img, form, input, table, video, audio, iframe {
+  max-width: 100%;
+}
+```
+
+In this code snippet, we set our images, forms, inputs, tables, videos, audio 
+elements, and iframes all to expand to `max-width: 100%`. For media that is 
+larger in size than its parent element, this will behave exactly the same as 
+setting `width: 100%`, i.e. the media will fill the parent's width no matter 
+what. However, if the media's original width is smaller than the width of the 
+parent, it will not expand to fill the parent's width when the parent's width is 
+larger than the media. For example, if the parent is 500px wide and we are 
+displaying an image that is 300px wide, that image will not be scaled any larger 
+than 300px wide. When the parent element is 300px wide or smaller, the image 
+will fill the parent. This prevents pixelation of images.
+
+Using these properties ensures that our media scales fluidly and allows us to 
+write fewer media queries. We can focus on sizing the parent element of the 
+media content, instead of manually sizing each element.
 
 Consider a website like [Instagram](https://instagram.com): each photo being displayed
 to a user shares a 'column' of content - a username, the photo, likes, comments;
