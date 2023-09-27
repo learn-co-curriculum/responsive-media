@@ -1,6 +1,6 @@
 # Intro to Responsive Media
 
-## Learning Objectives
+## Learning Goals
 
 - Explain responsive layouts.
 - Use percent measurements.
