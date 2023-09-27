@@ -1,6 +1,11 @@
 # Intro to Responsive Media
 
-## Problem Statement
+## Learning Objectives
+
+- Explain responsive layouts.
+- Use percent measurements.
+
+## Introduction
 
 Media queries allow us to choose between certain styles based on the size of
 the device. We can easily imagine a web page full of text breaking into
@@ -10,11 +15,6 @@ adorable kitten makes sense in a multi-column _and_ a single-column display?
 
 > **NOTE:** We're going to talk about _media_ as in images or videos in this
 > lesson. Don't confuse _media_ with _media queries_.
-
-## Objectives
-
-1. Explain responsive layouts
-1. Use percent measurements
 
 ## Explain Responsive Layouts
 
@@ -69,5 +69,3 @@ accessible and the code more maintainable with fewer media queries.
 ## Resources
 
 - [Responsive Media Content - Code Example](http://jsfiddle.net/flatiron_school/HP6A3/1/)
-
-<p class='util--hide'>View <a href='https://learn.co/lessons/responsive-media'>Responsive Media</a> on Learn.co and start learning to code for free.</p>
